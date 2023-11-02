@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Data Display</title>
+</head>
+<body>
+    <div id="json-data-container">
+        <!-- JSON data will be inserted here -->
+    </div>
+
+    <script>
+        const jsonDataContainer = document.getElementById("json-data-container");
+
+        // Define the URL of the JSON file
+        const jsonFileURL = 'https://raw.githubusercontent.com/kalendra456/xsshacking/main/json%20xss.json';
+
+        // Fetch the JSON data
+        fetch(jsonFileURL)
+            .then((response) => response.json())
+            .then((data) => {
+                // Process and display the JSON data within the container
+                jsonDataContainer.innerHTML = JSON.stringify(data, null, 2);
+            })
+            .catch((error) => {
+                console.error("Error loading JSON data:", error);
+            });
+    </script>
+</body>
+</html>
