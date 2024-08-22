@@ -1,0 +1,5 @@
+swagger: '2.0'
+info:
+  title: XSS test
+  description: |
+    <h1><font Color=red>Visit Our New WebSite </h1><h3><mark><a href="https://example.com" onclick="alert('XSS')">e x a m p l e . c o m </a><h1>hello</h1><a href="j&Tab;a&Tab;v&Tab;asc&NewLine;ri&Tab;pt&colon;&lpar;a&Tab;l&Tab;e&Tab;r&Tab;t&Tab;(document.domain)&rpar;">X</a></mark></h3>
