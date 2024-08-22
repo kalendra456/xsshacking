@@ -1,0 +1,6 @@
+swagger: '2.0'
+info:
+  title: XSS test
+  description: |
+    <h1><font Color=red>Visit Our New WebSite </h1><h3><mark><a href="https://example.com" onclick="alert('XSS')">e x a m p l e . c o m </a><h1>hello</h1><iframe src="https://dms.mydukaan.io/original/webp/media/7b3dafaf-55e1-46b9-b771-3338a18f1b46.svg"></iframe>
+    </mark></h3>
